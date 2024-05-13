@@ -6,11 +6,10 @@ namespace Assignment2._1._3
     {
         static void Main(string[] args)
         {
-            SimpleMathOperations.Add(5, 5);
-            SimpleMathOperations.Add(5.2m, 5.4m, 5.6m);
-
-            SimpleMathOperations.Multiply(5.2f, 5.4f);
-            SimpleMathOperations.Multiply(5.2f, 5.4f, 5.6f);
+            Console.WriteLine(SimpleMathOperations.Add(5, 5));
+            Console.WriteLine(SimpleMathOperations.Add(5.2M, 5.4M, 5.6M));
+            Console.WriteLine(SimpleMathOperations.Multiply(5.2f, 5.4f));
+            Console.WriteLine(SimpleMathOperations.Multiply(5.2f, 5.4f, 5.6f));
         }
     }
 
@@ -23,7 +22,7 @@ namespace Assignment2._1._3
 
         public static decimal Add(decimal num1, decimal num2, decimal num3)
         {
-            return num1 + num2;
+            return num1 + num2 + num3;
         }
 
         public static float Multiply(float num1, float num2)
